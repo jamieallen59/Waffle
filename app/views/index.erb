@@ -1,0 +1,17 @@
+<h1>Welcome to the bookmark manager</h1>
+
+Current links:
+<ul>
+  <% @waffles.each do |link| %>
+    <li><a href="<%= link.url %>"><%= link.title %></a></li>
+  <% end %>
+</ul>
+
+<div id='new-waffle'>
+	<form action="/waffles" method="post">
+		Url: <input type="text" name="url">
+		Title: <input type="text" name="title">
+		Tags: <input type="text" name="tags">
+		<input type="submit" value="Post Waffle!">
+	</form>
+</div>
