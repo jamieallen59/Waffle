@@ -1,7 +1,17 @@
-<% if current_user %>
-	Welcome, <%= current_user.username %>
-		<form method="post" action="/sessions">
-			<input type="hidden" name="_method" value="delete">
-			<input type="submit" value="Sign out">
-		</form>
-<% end %>
+<header>
+	<a href='/' id="logo">       Waffle</a>
+	<span id='user-links'>
+		<% if current_user %>
+			Fancy a waffle, <%= current_user.username %>?
+				<form method="post" action="/sessions">
+					<input type="hidden" name="_method" value="delete">
+					<input type="submit" value="Sign out" class='button'>
+				</form>
+
+		<% else %>
+			<p><a href='/users/new' id='sign-up' class='button width'>Sign up</a>
+			<a href='/sessions/new' id='sign-up' class='button width'>Sign in</a></p>
+		<% end %>
+	</span>
+</header>
+

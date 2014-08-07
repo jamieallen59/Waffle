@@ -1,3 +1,325 @@
 body {
-	background-color: #DEDEDE;
+	background-color: #FEFFA0;
+	font-family: Georgia;
 }
+
+header {
+	background-image: url(http://dailytriangle.files.wordpress.com/2010/01/6a00d83451b77469e200e54f95ced58834-800wi.gif);
+	background-size: 50px 50px;
+	background-position: 20px 15px;
+	background-repeat: no-repeat;
+	height: 80px;
+	background-color: #4C3F39;
+}
+
+header > * {
+	margin: auto 0;
+	vertical-align: -42px;
+	display: inline-block;
+}
+
+a#logo {
+	font-size: 35px;
+	text-decoration: none;
+	padding-left: 80px;
+	color: #DEDEDE;
+}
+span#user-links {
+	float: right;
+	margin-right: 20px;
+}
+.button {
+	background-color: #D8825E;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+}
+.width {
+	width: 110px;
+	height: 38px;
+	display: inline-block;
+}
+.button:hover {
+	background-color: #CE6235;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+p {
+	vertical-align: middle;
+	line-height: 80px
+}
+#sign-up {
+	vertical-align: middle;
+	line-height: 38px;
+}
+
+/*#feedback-page{
+	text-align:center;
+}*/
+
+/*------ Homepage ----------*/
+
+#links-container {
+	background-color: #FFCD75;
+	margin: 20px 40px 40px 40px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+	padding: 10px;
+}
+
+input {
+	font-size: 14px;
+/*	height: 25px;
+	width: 180px;*/
+}
+
+#post-waffle {
+	background-color: #D8825E;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	border: 1px solid white;
+	padding: 5px 10px;
+	text-align: center;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+}
+#post-waffle:hover{
+	background-color: #CE6235;
+}
+
+.link {
+	background-color: #EBEBEB;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  /* 10px for top and bottom, inherit from parent */
+  /* for left and right */
+  margin: 10px inherit;
+  padding: 15px 10px;
+}
+
+  .link a.title {
+    letter-spacing: 1px;
+  }
+
+  .link .description {
+    margin: 10px inherit;
+  }
+
+  .link .source {
+    float: right; 
+    font-size: 12px;
+  }
+
+#header-1 {
+	text-align: left;
+	padding-top: 20px;
+	font-size: 18px;
+	color: #4C3F39;
+}
+
+#header-2 {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+	color: #4C3F39;
+}
+#form-main {
+	width: 100%;
+	float: left;
+	padding-top: 0px;
+}
+#form-div {
+	background-color:#8D8A83;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Georgia;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #45b6da;
+	color: #3c3c3c;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#3c3c3c;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#username{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#username:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#password{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#password_confirmation{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-orange{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #FFCD75;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:0px;
+  font-weight:700;
+}
+
+#button-orange:hover{
+	background-color: rgba(0,0,0,0);
+	color: #45b6da;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 78px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+/*------ flash -------------*/
+.flash {
+  text-align: center;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+  color: white;
+}
+	.flash.notice {
+		background-color: rgba(216,130,94,0.75);
+	}
+	.flash.error {
+		background-color: rgba(169,29,42,0.75);
+	}
