@@ -1,24 +1,23 @@
 <div id='links-container'>
 	<form action="/waffles" method="post">
 		<input type="text" name="title" placeholder='Construct your waffle...'>
-		<input type="text" name="url" placeholder='Link'>
+		<input type="text" name="url" placeholder='Link (optional)'>
 		<input type="text" name="tags" placeholder='Tags'>
 		<input id='post-waffle' type="submit" value="Post Waffle!">
 	</form>
 </div>
 
 <div id='links-container'>
-	<h1 id='header-1'>What are you waffling on about?</h1>
+<h1 id='header-1'>What are you waffling on about?</h1>
 	<ul id='links'>
 	  <% @waffles.each do |link| %>
 	    <li class='link'>
-	    	<a class='title' href="<%= link.url %>"><%= link.title %></a>
+	    <a class='title' href="<%= link.url %>"><%= link.title %></a>
     		<div class='description'>
-    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    		</div>
+    			Apple will only get better, due to Android is fragmented, this is why iCloud, because of CrackBerry in the end best design so that battery drain, where iTunes makes it easy for example so-called “iPad killer”.
     		<span class='source'>
-    			added yesterday by
-    			<a href='#'>jamieallen59@gmail.com</a>
+    			added at <%= Time.new %> by
+    		<a href='#'>jamieallen59@gmail.com</a>
     		</span>
 	    </li>
 	  <% end %>
