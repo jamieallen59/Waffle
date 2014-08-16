@@ -1,0 +1,18 @@
+<header>
+	<a href='/' id="logo">       Waffle.</a>
+	
+		<% if current_user %>
+			<p class='welcome-text'>Welcome, <%= current_user.username %>.</p>
+			<span id='user-links'>
+				<form method="post" action="/sessions">
+					<input type="hidden" name="_method" value="delete">
+					<input id='sign-out' type="submit" value="Sign out" class='button'>
+				</form>
+
+		<% else %>
+			<p class="sign-up"><a href='/users/new' id='sign-up' class='button width'>Sign up</a>
+			<a href='/sessions/new' id='sign-up' class='button width'>Sign in</a></p>
+		<% end %>
+	</span>
+</header>
+

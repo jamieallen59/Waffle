@@ -1,0 +1,27 @@
+<div id='links-container'>
+	<form action="/waffles" method="post">
+		<input type="text" name="title" placeholder='Construct your waffle...'>
+		<input type="text" name="url" placeholder='Link (optional)'>
+		<input type="text" name="tags" placeholder='Tags'>
+		<input id='post-waffle' type="submit" value="Post Waffle!">
+	</form>
+</div>
+
+<div id='links-container'>
+<h1 id='header-1'>What are you waffling on about?</h1>
+	<ul id='links'>
+	  <% @waffles.reverse_each do |link| %>
+	    <li class='link'>
+    		<div class='description'>
+    			<%= link.title %>
+    			<form action="<%= link.url %>">
+    				<input type="submit" value="more info">
+					</form>
+    		<span class='source'>
+    			added at <%= link.time %> by
+    		<a href='#'>jamieallen59@gmail.com</a>
+    		</span>
+	    </li>
+	  <% end %>
+	</ul>
+</div>
