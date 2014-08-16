@@ -10,13 +10,15 @@
 <div id='links-container'>
 <h1 id='header-1'>What are you waffling on about?</h1>
 	<ul id='links'>
-	  <% @waffles.each do |link| %>
+	  <% @waffles.reverse_each do |link| %>
 	    <li class='link'>
-	    <a class='title' href="<%= link.url %>"><%= link.title %></a>
     		<div class='description'>
-    			Apple will only get better, due to Android is fragmented, this is why iCloud, because of CrackBerry in the end best design so that battery drain, where iTunes makes it easy for example so-called “iPad killer”.
+    			<%= link.title %>
+    			<form action="<%= link.url %>">
+    				<input type="submit" value="more info">
+					</form>
     		<span class='source'>
-    			added at <%= Time.new %> by
+    			added at <%= link.time %> by
     		<a href='#'>jamieallen59@gmail.com</a>
     		</span>
 	    </li>

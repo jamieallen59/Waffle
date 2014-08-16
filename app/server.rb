@@ -20,9 +20,3 @@ set :session_secret, 'my unique encryption key!'
 use Rack::Flash
 set :partial_template_engine, :erb
 set :public_folder, Proc.new { File.join(root, "..", "public")}
-
-
-
-
-
-

@@ -4,8 +4,9 @@ class Waffle
 
 	has n, :tags, :through => Resource
 
-	property :id,		Serial
+	property :id,			Serial
 	property :title,	String
 	property :url,		String
+	property :time, 	String
 
 end

@@ -55,7 +55,9 @@ span#user-links {
 }
 .sign-up {
 	vertical-align: middle;
-	line-height: 80px
+	line-height: 80px;
+	float: right;
+/*	margin-right: 4%;*/
 }
 #sign-up {
 	vertical-align: middle;
