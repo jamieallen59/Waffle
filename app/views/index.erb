@@ -1,9 +1,9 @@
 <div id='links-container'>
 	<form action="/waffles" method="post">
-		<input type="text" name="title" placeholder='Construct your waffle...'>
-		<input type="text" name="url" placeholder='Link (optional)'>
-		<input type="text" name="tags" placeholder='Tags'>
-		<input id='post-waffle' type="submit" value="Post Waffle!">
+		<input id='waffle-input-box' type="text" name="title" placeholder='Construct your waffle...'>
+		<input id='waffle-input-box' type="text" name="url" placeholder='Link (optional)'>
+		<input id='waffle-input-box' type="text" name="tags" placeholder='Tags'>
+		<input id='post-waffle' type="submit" value="Send waffle">
 	</form>
 </div>
 
@@ -14,13 +14,25 @@
 	    <li class='link'>
     		<div class='description'>
     			<%= link.title %>
-    			<form action="<%= link.url %>">
-    				<input type="submit" value="more info">
-					</form>
-    		<span class='source'>
-    			added at <%= link.time %> by
-    		<a href='#'>jamieallen59@gmail.com</a>
-    		</span>
+    			<span class='source'>
+	    			added at <%= link.time %> by
+	    			<a href='#'>jamieallen59@gmail.com</a>
+	    		</span>
+    		</div>
+
+    		<section id='link-and-button-container'>
+    			<div id='link-buttons'>
+    				<form id="reply-action" action="*********">
+		  				<input id='reply-button' type="submit" value="Reply">
+		  				<img id ='reply-icon' src='/images/reply_hover.png'>
+						</form>
+		  			<form id="link-out-action" action="<%= link.url %>">
+		  				<input id='link-out-button' type="submit" value="More info">
+		  				<img id ='more-icon' src='/images/more.png'>
+						</form>
+					</div>
+    		</section>
+
 	    </li>
 	  <% end %>
 	</ul>

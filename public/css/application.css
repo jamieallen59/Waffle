@@ -1,16 +1,18 @@
 body {
 	background-color: #FEFFA0;
-	font-family: Georgia;
+	font-family: Arial, Helvetica;
 }
 
 header {
+	display: flex;
+	flex-direction: row;
 	background-image: url(http://dailytriangle.files.wordpress.com/2010/01/6a00d83451b77469e200e54f95ced58834-800wi.gif);
-	background-size: 50px 50px;
-	background-position: 20px 15px;
+	background-size: 50px 47px;
+	background-position: 20px 16px;
 	background-repeat: no-repeat;
 	height: 80px;
 	background-color: #4C3F39;
-	min-width: 550px;
+	min-width: 685px;
 }
 
 header > * {
@@ -20,16 +22,21 @@ header > * {
 }
 
 a#logo {
-	font-size: 35px;
+	font-size: 46px;
+	font-family: Georgia;
 	text-decoration: none;
 	padding-left: 80px;
+	color: #FFF;
+}
+a#logo:hover {
 	color: #DEDEDE;
 }
 span#user-links {
-	float: right;
-	margin-right: 20px;
-	display: inline-flex;
+	position: absolute;
+	right: 0;
+	margin-right: 3%;
 }
+
 .button {
 	background-color: #D8825E;
 	text-decoration: none;
@@ -54,14 +61,16 @@ span#user-links {
 	top: 1px;
 }
 .sign-up {
-	vertical-align: middle;
-	line-height: 80px;
-	float: right;
-/*	margin-right: 4%;*/
+	display: flex;
+	position: absolute;
+	right: 0;
+	margin-top: 20px;
+	margin-right: 3%;
 }
 #sign-up {
 	vertical-align: middle;
 	line-height: 38px;
+	border-radius: 3px;
 }
 
 /*#feedback-page{
@@ -77,14 +86,30 @@ span#user-links {
 	margin: 20px 40px 40px 40px;
 	box-shadow: 0 0 5px rgba(0,0,0,0.4);
 	padding: 10px;
-	min-width: 550px;
+	min-width: 685px;
+	display: flex;
+	flex-direction: column;
 }
 
 input {
 	font-size: 14px;
+
+}
+input#waffle-input-box {
+	border: 1px solid #e2a287;
+	padding: 5px;
 	width: 22%;
-/*	height: 25px;
-	width: 180px;*/
+	border-radius: 3px;
+	background-color: #DEDEDE;
+}
+input#waffle-input-box:focus {
+	outline-width: 0;
+	background-color: #FFF;
+	transition: .1s ease-in-out;
+	}
+:focus::-webkit-input-placeholder {
+	color: #DEDEDE;
+	transition: .1s ease-in-out;
 }
 
 #post-waffle {
@@ -98,18 +123,28 @@ input {
 	text-align: center;
   margin-left: 5%;
   text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  border-radius: 3px;
+  width: 20%;
 }
 #post-waffle:hover{
 	background-color: #CE6235;
 }
-
+	ul#links {
+		display: flex;
+		flex-direction: column;
+	}
 .link {
-	background-color: #EBEBEB;
+	background-color: #FFFFFF;
 	box-shadow: 0 0 5px rgba(0,0,0,0.4);
   /* 10px for top and bottom, inherit from parent */
   /* for left and right */
   margin: 10px inherit;
   padding: 15px 10px;
+  border: 1px solid #DEDEDE;
+  display: flex;
+}
+.link:hover {
+	background-color: #f8f8f8;
 }
 
   .link a.title {
@@ -117,14 +152,87 @@ input {
   }
 
   .link .description {
-    margin: 10px inherit;
+  	width: 62%;
+  	display: flex;
+		flex-direction: column;
   }
-
+  span.source {
+  	margin-top: 18px;
+		margin-left: 18px;
+  }
   .link .source {
-    float: right; 
-    font-size: 14px;
-    margin-right: 1%;
+    font-size: 13px;
   }
+  section#link-and-button-container {
+  	display: flex;
+  	flex-direction: column;
+  	width: 300px;
+  }
+  	div#link-buttons {
+  		display: flex;
+  		margin-top: 2%;
+  	}
+  		form#reply-action {
+  			text-align: center;
+  		}
+	  		input#reply-button {
+					width: 100px;
+					border: 1px solid #D8825E;
+					background-color: #FFF;
+					text-decoration: none;
+					font-size: 18px;
+					color: #b8b8b8;
+					cursor: pointer;
+					padding: 5px 17px;
+					padding-left: 34px;
+					text-align: center;
+					margin-left: 25%;
+					border-radius: 3px;
+	  		}
+	  		input#reply-button:hover {
+					background-color: #D8825E;
+					color: #FFF;
+					/*transition: 0.03s ease-in-out;*/
+
+	  		}
+	  		img#reply-icon {
+					position: absolute;
+					margin-top: -26px;
+					margin-left: -16px;
+					cursor: pointer;
+					opacity: 0.8;
+				}
+	  	form#link-out-action {
+	  		text-align: center;
+	  	}
+	  		input#link-out-button {
+					width: 100px;
+					border: 1px solid #D8825E;
+					background-color: #FFF;
+					text-decoration: none;
+					font-size: 18px;
+					color: #b8b8b8;
+					cursor: pointer;
+					padding: 5px 100px;
+					padding-left: 34px;
+					text-align: center;
+					margin-left: 38%;
+					border-radius: 3px;
+				}
+				input#link-out-button:hover {
+					background-color: #D8825E;
+					color: #FFF;
+				}
+				img#more-icon {
+					position: absolute;
+					margin-top: -27px;
+					margin-left: -8px;
+					cursor: pointer;
+					height: 20px;
+					opacity: 0.5;
+				}
+
+		
 
 #header-1 {
 	text-align: left;
@@ -133,6 +241,7 @@ input {
 	padding-left: 8px;
 	font-size: 20px;
 	color: #4C3F39;
+	display: flex;
 }
 
 #header-2 {
@@ -164,7 +273,7 @@ input {
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Georgia;
+	font-family: Arial, Helvetica;
   font-weight:500;
 	font-size: 20px;
 	border-radius: 0;
@@ -197,9 +306,11 @@ input {
 /*------ When Signed in --------------*/
 
 p.welcome-text {
-	color: #DEDEDE;
-	margin-top: 44px;
-	margin-left: 39px;
+	color: #FFF;
+	margin: auto;
+	margin-top: 42px;
+	word-spacing: 3px;
+	letter-spacing: 1px;
 }
 
 #sign-out {
@@ -207,7 +318,9 @@ p.welcome-text {
 	vertical-align: middle;
 	line-height: 30px;
 	margin-top: 22px;
+	cursor: pointer;
 }
+
 
 
 /* Icons ---------------------------------- */

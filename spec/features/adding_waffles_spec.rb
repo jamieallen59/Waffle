@@ -5,7 +5,6 @@ feature "User adds a new waffle" do
 	scenario "when browsing the homepage" do
 		expect(Waffle.count).to eq 0
 		visit '/'
-		# save_and_open_page
 		add_waffle("http://www.makersacademy.com/", "Makers Academy")
 		expect(Waffle.count).to eq 1
 		waffle = Waffle.first
