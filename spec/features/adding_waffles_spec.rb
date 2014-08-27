@@ -28,7 +28,7 @@ feature "User adds a new waffle" do
 			fill_in 'url', :with => url
 			fill_in 'title', :with => title
 			fill_in 'tags', :with => tags.join(' ')
-			click_button 'Post Waffle!'
+			click_button 'Send waffle'
 		end
 	end
 end

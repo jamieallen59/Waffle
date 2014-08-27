@@ -2,7 +2,7 @@
 	<a href='/' id="logo">       Waffle</a>
 	
 		<% if current_user %>
-			<p class='welcome-text'>Welcome, <%= current_user.name %>.</p>
+			<p class='welcome-text'>Welcome, <%= current_user.username %>.</p>
 			<span id='user-links'>
 				<form method="post" action="/sessions">
 					<input type="hidden" name="_method" value="delete">

@@ -1,15 +1,16 @@
 <div id='links-container'>
-	<form action="/waffles" method="post">
+	<form action="/waffles" id='new-waffle' method="post">
 		<input id='waffle-input-box' type="text" name="title" placeholder='Construct your waffle...'>
 		<input id='waffle-input-box' type="text" name="url" placeholder='Link (optional)'>
 		<input id='waffle-input-box' type="text" name="tags" placeholder='Tags'>
-		<input id='post-waffle' type="submit" value="Send waffle">
+		<button id='post-waffle' type="submit">Send waffle</button>
 	</form>
 </div>
 
 <div id='links-container'>
 <h1 id='header-1'>What are you waffling on about?</h1>
 	<ul id='links'>
+
 	  <% @waffles.reverse_each do |link| %>
 	    <li class='link'>
     		<div class='description'>
@@ -32,8 +33,8 @@
 						</form>
 					</div>
     		</section>
-
 	    </li>
 	  <% end %>
+
 	</ul>
 </div>

@@ -13,14 +13,14 @@ feature "User Signs up" do
 	end
 
 	scenario "with and email that is already registered" do
-		lambda { sign_up }.should change(User, :count).by 1
-		lambda { sign_up }.should change(User, :count).by 0
+		expect(lambda { sign_up }).to change(User, :count).by 1
+		expect(lambda { sign_up }).to change(User, :count).by 0
 		expect(page).to have_content("This email is already taken")
 	end
 
 
 	scenario "with a password that doesn't match" do
-		lambda { sign_up('a@a.com', 'pass', 'wrong', 'Alice', 'alice101') }.should change(User, :count).by 0
+		expect(lambda { sign_up('a@a.com', 'pass', 'wrong', 'Alice', 'alice101') }).to change(User, :count).by 0
 		expect(current_path).to eq '/users'
 		expect(page).to have_content("Invalid password confirmation. Please try again")
 	end
