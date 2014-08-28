@@ -21,12 +21,23 @@
 	    		</span>
     		</div>
 
+
     		<section id='link-and-button-container'>
     			<div id='link-buttons'>
     				<form id="reply-action" action="*********">
 		  				<input id='reply-button' type="submit" value="Reply">
 		  				<img id ='reply-icon' src='/images/reply_hover.png'>
 						</form>
+
+						<script src='https://code.jquery.com/jquery-1.10.2.min.js'></script>
+						<script>
+							$(document).ready(function(){
+								$('#reply-action').on('click', function(){
+									$("<li class='reply-link'><div class='reply-description'><input id='reply-input-box' type='text' name='reply' placeholder='Respond to this waffle here...'></div><section id='link-and-button-container'><div id='link-buttons'><form id='reply-action'><input id='reply-button' type='submit' value='Reply'><img id ='reply-icon' src='/images/reply_hover.png'></form></div></section></li>").appendTo('.link')
+								});
+							});
+						</script>
+
 		  			<form id="link-out-action" action="<%= link.url %>">
 		  				<input id='link-out-button' type="submit" value="More info">
 		  				<img id ='more-icon' src='/images/more.png'>
