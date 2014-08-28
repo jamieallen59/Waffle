@@ -1,7 +1,7 @@
 Waffle
 ======
 
-[Code Climate: []![Code Climate](https://codeclimate.com/github/jamieallen59/Waffle/badges/gpa.svg)](https://codeclimate.com/github/jamieallen59/Waffle)
+[]![Code Climate](https://codeclimate.com/github/jamieallen59/Waffle/badges/gpa.svg)(https://codeclimate.com/github/jamieallen59/Waffle)
 
 Waffle is a recreation of a popular social networking website with a breakfasty slant.
 
