@@ -3,7 +3,7 @@ Waffle
 
 ![Code Climate](https://codeclimate.com/github/jamieallen59/Waffle/badges/gpa.svg)
 
-Waffle is a recreation of a popular social networking website with a breakfasty slant.
+Waffle is a re-creation of a popular social networking website with a breakfasty slant.
 
 A user can sign up and "waffle" on to their hearts delight. Other users can respond by posting on the communal noticeboard.
 
